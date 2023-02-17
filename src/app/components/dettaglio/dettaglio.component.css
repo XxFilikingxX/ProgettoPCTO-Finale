@@ -1,0 +1,21 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.63));
+    height: 100vh;
+    color: white;
+}
+
+h1{
+    font-weight: 700;
+}
+
+p {
+    font-size: large;
+}
+
+img {
+    width: 30%;
+}
+
+.dettaglioText {
+    margin: 1%;
+}

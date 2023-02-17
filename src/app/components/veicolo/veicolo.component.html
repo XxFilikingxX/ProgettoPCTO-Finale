@@ -1,0 +1,12 @@
+<ng-container *ngIf="veicolo,else elseBlock">
+    <div id="{{veicolo.modello}}" class="{{veicolo.tipologia + 'ID'}}" class="float-start">
+        <a (click)="dettaglio()">
+            <img class="card img-fluid" [src]="'../../../assets/Img/'+veicolo.immagine">
+            <p class="text-center">{{veicolo.marca + " " + veicolo.modello}}</p>
+            <p style="font-size: 30px;" class="text-center">{{"€ "+veicolo.prezzoGiornaliero}}</p>
+        </a>
+    </div>
+</ng-container>
+<ng-template #elseBlock>
+    <div>Veicolo non valido</div>
+</ng-template>

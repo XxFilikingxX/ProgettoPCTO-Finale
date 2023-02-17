@@ -1,0 +1,57 @@
+body {
+    color: white;
+    text-shadow: black 2px 1px 1px;
+}
+
+.input {
+    background-color: #ffde71;
+    height: 50px;
+    width: 16%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input:focus {
+    background-color: transparent;
+    color: #FFCF33;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(black, rgba(0, 0, 0, 0.829));
+    
+}
+
+
+#tabc {
+    background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.63));
+}
+
+#tabc tr td {
+    font-size: 20px;
+    text-align: center;
+    border: 2px 0 solid black;
+    width: 14%;
+}
+
+#table {
+    margin: 10px 40px;
+    border: solid black 10px;
+}
+
+.bin {
+    cursor: pointer;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+    color: #FFCF33;
+}
+input[data-autocompleted] {
+    background-color: transparent !important;
+    color: #FFCF33;
+}

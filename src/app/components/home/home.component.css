@@ -1,0 +1,53 @@
+body,html{
+    height:100vh;
+}
+#cont{
+    background-image: url("https://images4.alphacoders.com/955/955566.jpg");
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+}
+.show{
+    padding: 150px 150px;
+    background-color: transparent;
+}
+.ric{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgba(255, 207, 51, 0.824);
+    align-items: center;
+    text-align: center;
+    border-radius: 75px;
+    width: 600px;
+    height: 100px;
+    transition: .3s;
+}
+.svcerca{
+    border-radius: 100%;
+    margin-left: 20px;
+    height: 70%;
+    aspect-ratio: 1;
+    color: #FFCF33;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.ritem{
+    margin: 0 20px;
+}
+h2{
+    color:black;
+}
+a{
+    text-decoration: none;
+}
+.ric:hover{
+    background-color: rgba(199, 153, 0, 0.824);
+}
+.ric:hover svg{
+    color: rgba(199, 153, 0, 0.824);
+}
+

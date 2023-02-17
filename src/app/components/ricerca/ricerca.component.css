@@ -1,0 +1,44 @@
+.host {
+    height: 100vh;
+}
+
+body{
+    color: whitesmoke;
+    background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.63));
+}
+html{
+    background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.63));
+    height: fit-content;
+}
+
+img {
+    width: 20vh;
+}
+
+img:hover {
+    transform: scale(1.01);
+    background-color: rgba(255, 255, 255, 0.726);
+    border: solid #ffcf33 1px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h3 {
+    text-align: center;
+}
+
+:host {
+    display: block;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.63));
+}
+
+.card {
+    background-color: transparent;
+}

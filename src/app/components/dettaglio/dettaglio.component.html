@@ -1,0 +1,26 @@
+<app-header></app-header>
+
+<body>
+    <div style="height:60px"></div>
+    <ng-container *ngIf="veicoli;else elseBlock">
+        <div class="container-fluid">
+            <h1 class="text-center">Dettagli Veicolo</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="justify-content-center d-flex">
+                <img class="img-fluid" [src]=" '../../../assets/Img/'+veicoli.immagine">
+            </div>
+            <div class="text-center">
+                <h1 class="dettaglioText">{{veicoli.marca}} {{veicoli.modello }}</h1>
+                <h2 class="dettaglioText">{{veicoli.tipologia}}</h2>
+                <h3 class="dettaglioText">{{ veicoli.prezzoGiornaliero | number: '1.2-2' | currency: 'EUR'}} al giorno
+                </h3>
+                <p class="h5 dettaglioText">Lista optional: {{veicoli.listaOptional}}</p>
+            </div>
+        </div>
+    </ng-container>
+    <ng-template #elseBlock>
+        <app-header></app-header>
+        <div>Veicolo non disponibile!</div>
+    </ng-template>
+</body>

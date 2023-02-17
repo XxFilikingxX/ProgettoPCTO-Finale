@@ -1,0 +1,18 @@
+img{
+    width:33vh;
+}
+.float-start{
+    margin-left: 5vh;
+    margin-bottom: 3vh;
+}
+.card{
+    background-color: transparent;
+}
+img:hover {
+    transform: scale(1.01);
+    background-color: rgba(255, 255, 255, 0.726);
+    border: solid #ffcf33 1px;
+}
+p{
+    margin: 2px 0px;
+}

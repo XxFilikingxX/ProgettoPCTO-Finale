@@ -1,0 +1,19 @@
+.container {
+}
+
+.chisiamotxt {
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+    text-align: center;
+    font-size: xx-large;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#FFCF33, rgb(255, 239, 93));
+}

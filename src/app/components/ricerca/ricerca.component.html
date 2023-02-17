@@ -1,0 +1,48 @@
+<app-header></app-header>
+<body>
+<div class="esterno">
+    <div style="height:60px"></div>
+    <div class="container">
+        <h3>FILTRA PER IL MODELLO CHE PREFERISCI</h3>
+    </div>
+    <div class="row m-2">
+        <div class="col-2">
+            <a (click)="cerca(0)">
+                <div class="container m-0">
+                    <img class="card" id="0" src="../../../assets/Img/audi-a5-berlina-110.png">
+                    <p>Berline</p>
+                </div>
+            </a>
+            <a (click)="cerca(1)">
+                <div class="container m-0">
+                    <img class="card" id="1" src="../../../assets/Img/bmw-x1-suv-100.png">
+                    <p>Suv</p>
+                </div>
+            </a>
+            <a (click)="cerca(2)">
+                <div class="container m-0">
+                    <img class="card" id="2" src="../../../assets/Img/fiat-qubo-pulmino-70.png">
+                    <p>Pulmini</p>
+                </div>
+            </a>
+            <a (click)="cerca(3)">
+                <div class="container m-0">
+                    <img class="card" id="3" src="../../../assets/Img/bmw-840i-cabrio-250.png">
+                    <p>Cabrio</p>
+                </div>
+            </a>
+            <a (click)="cerca(4)">
+                <div class="container m-0">
+                    <img class="card" id="4" src="../../../assets/CarAdd.png">
+                    <p>All</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-10">
+            <ng-container *ngFor="let v of veicoli">
+                <app-veicolo [veicolo]="v"></app-veicolo>
+            </ng-container>
+        </div>
+    </div>
+</div>
+<body>

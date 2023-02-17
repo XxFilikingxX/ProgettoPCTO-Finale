@@ -1,0 +1,25 @@
+a{
+    color:rgb(10, 10, 10);
+    padding:2px;
+    height: 34px; 
+}
+#imgNav{
+    padding-top: 5px;
+    height: 50px;
+}
+img{
+    width:100px;
+}
+#hoverNav:hover, #imgNav:hover{
+    border-bottom: 5px solid black;
+    color: black;
+}
+#navBar{
+    background-color: rgb(255, 207, 51);
+    height: 60px;
+    width:100%;
+    position: fixed;
+    top:0px;
+    border-bottom: 3px solid black;
+    z-index: 1;
+}
